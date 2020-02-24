@@ -570,25 +570,25 @@ a.effect_2 img {
   transform: translateY(300px);
 } */
 
-.wrapper-collection .owl-nav button {
+.owl-nav button {
   position: absolute;
-  top: 35%;
+
   width: 50px;
   height: 50px;
-  transform: translateY(-35%);
+
   left: 0;
 }
 
-.wrapper-collection .owl-nav button.owl-next {
+.owl-nav button.owl-next {
   left: auto;
   right: 0;
 }
 
-.wrapper-collection .owl-nav button span {
+.owl-nav button span {
   font-size: 0;
 }
 
-.wrapper-collection .owl-nav button::before {
+.owl-nav button::before {
   font-size: 18px;
   color: #000;
   font-weight: 900;
@@ -613,6 +613,11 @@ a.effect_2 img {
 .owl-prev:hover {
   background: none !important;
   color: #000 !important;
+}
+
+.wrapper-collection .owl-nav button {
+  top: 35%;
+  transform: translateY(-35%);
 }
 
 .box-collection .owl-nav button span {
@@ -1208,7 +1213,7 @@ span.product-detail-price {
 .select-color {
   width: 40px;
   height: 41px;
-  border: 2px solid orange;
+  border: 2px solid #8a8a8a;
   border-radius: 50%;
   padding: 2px;
   margin: 5px;
@@ -1317,11 +1322,282 @@ a.btn-multinventory {
 }
 
 .gallery-mobile {
-  display: none;
+  display: none !important;
 }
 
 .product-detail-depot {
   margin-bottom: 10px;
+}
+
+.product-detail-main .owl-nav button {
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border-radius: 50% !important;
+  background-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.product-detail-main .owl-nav button.owl-prev::before {
+  font-family: 'Font Awesome\ 5 Free';
+  content: '\f053';
+}
+
+.product-detail-main .owl-nav button.owl-next::before {
+  content: '\f054';
+  font-family: 'Font Awesome\ 5 Free';
+}
+
+.select-color.active {
+  border: 2px solid #f59f2e !important;
+}
+
+.select-size.active {
+  background-color: #212121;
+}
+.select-size.active .size-btn {
+  color: #fff;
+}
+
+/*-----------------------------CHECKOUT-----------------------------*/
+.side-bar {
+  background-color: #edecec73;
+  padding: 5% 4% 0;
+}
+
+.order-product-item {
+  align-items: center;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.order-product-item--thumb {
+  width: 65px;
+  height: 70px;
+  background-color: #fff;
+  border: 1px solid #dadada;
+  border-radius: 8px;
+  position: relative;
+}
+
+.order-product-item--thumb__img {
+  width: 100%;
+  height: 100%;
+}
+
+.order-product-item--thumb__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+span.order-product-item--thumb__quantity {
+  position: absolute;
+  background-color: #7a7a7a;
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  top: -8px;
+  right: -8px;
+  color: #fff;
+}
+
+.order-product-item--info {
+  width: 90%;
+  padding-left: 15px;
+}
+
+.order-product-item span {
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.order-summary-section {
+  border-bottom: 1px solid #dadada;
+}
+
+.order-summary-section.order-summary-section-discount {
+  padding: 21px 0;
+}
+
+.fieldset .field {
+  width: 100%;
+  float: left;
+  padding: 0.63em;
+}
+
+.fieldset {
+  margin: -0.63em;
+}
+
+.field-input-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+input.field-input {
+  padding: 13px 20% 13px 12px;
+  width: 100%;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  outline-color: #3196da;
+}
+
+button.field-input-btn {
+  border: 1px solid #dadada;
+  background-color: #b1b1b1;
+  color: #fff;
+  padding: 13px 22px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin-left: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+button.field-input-btn:hover {
+  background-color: rgb(27, 27, 27);
+}
+
+.order-summary-section.order-summary-section-total-lines {
+  padding: 30px 0;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.total-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.total-line-name {
+  opacity: 0.7;
+}
+
+.total-line-price {
+  font-weight: 700;
+}
+
+.total-line-table-footer {
+  padding-top: 30px;
+}
+
+.total-line-name.payment-due-label {
+  opacity: 1;
+  font-size: 19px;
+  color: #000;
+}
+
+.total-line-name.payment-due {
+  font-size: 22px;
+  opacity: 1;
+  font-weight: 600;
+}
+
+.total-line.total-line-gift {
+  font-size: 14px;
+  padding: 10px 5px;
+  margin-top: 30px;
+  border: 2px dotted red;
+}
+
+.main {
+  padding: 56px 68px 0 0;
+}
+.main-header {
+  padding-bottom: 28px;
+}
+
+.main-header .breadcrumb {
+  padding: 8px 0;
+  margin: 14px 0;
+}
+
+.main-header .breadcrumb > li {
+  display: flex;
+  align-items: baseline;
+}
+
+.main-content {
+  padding-bottom: 56px;
+}
+
+.section-header {
+  margin-bottom: 21px;
+}
+
+.section-header h2.section-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+}
+
+p.section-content-text {
+  display: flex;
+  font-weight: 400;
+  font-size: 14px;
+  color: #737373;
+  margin-bottom: 11px;
+}
+
+p.section-content-text a {
+  color: #338dcb;
+  margin-left: 5px;
+}
+
+.field-two {
+  width: 66.66667% !important;
+}
+
+.field-third {
+  width: 33.33333% !important;
+}
+
+.side-bar {
+  width: 38%;
+
+  position: fixed;
+  right: 0;
+  border: 1px solid rgba(196, 196, 196, 0.514);
+}
+
+.step-footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-black {
+  border: none;
+  background: #000;
+  color: #fff;
+  padding: 20px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+a.step-footer-previous-link.tp_title {
+  color: #338dcb;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.step-footer .step-footer-previous-link .previous-link-icon {
+  fill: #338dbc;
+  transition: all 0.2s cubic-bezier(0.3, 0, 0, 1);
+  margin-right: 0.25em;
+}
+
+.step-footer .step-footer-previous-link:hover .previous-link-icon {
+  transform: translateX(-5px);
 }
 /*-------------------------- RESPONSIVE ----------------------------*/
 /*Smart phone nhỏ*/
@@ -1545,6 +1821,10 @@ a.btn-multinventory {
     margin-right: 0;
     width: 50%;
     padding: 0 10px;
+  }
+
+  .gallery-mobile {
+    display: block !important;
   }
 }
 

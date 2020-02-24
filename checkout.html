@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/setting.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,900|Rufina:700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Thanh toán</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <form action="post">
+          <div class="side-bar">
+            <div class="side-bar-content">
+              <div class="order-summary-sections">
+                <div
+                  class="order-summary-section order-summary-section-product-list"
+                >
+                  <div class="order-product-item">
+                    <div class="order-product-item--thumb">
+                      <div class="order-product-item--thumb__img">
+                        <img
+                          src="https://cdn.nhanh.vn/cdn/store1/41786/ps/20191113/hebi1_thumb_400x560.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <span class="order-product-item--thumb__quantity">1</span>
+                    </div>
+                    <div class="order-product-item--info">
+                      <span>Hebi Sweater - Ghi da rắn - M</span>
+                    </div>
+                    <div class="order-product-item--price">
+                      <span>480,000₫</span>
+                    </div>
+                  </div>
+                  <div class="order-product-item">
+                    <div class="order-product-item--thumb">
+                      <div class="order-product-item--thumb__img">
+                        <img
+                          src="https://cdn.nhanh.vn/cdn/store1/41786/ps/20191113/hebi1_thumb_400x560.jpg"
+                          alt=""
+                        />
+                      </div>
+                      <span class="order-product-item--thumb__quantity">1</span>
+                    </div>
+                    <div class="order-product-item--info">
+                      <span>Hebi Sweater - Ghi da rắn - M</span>
+                    </div>
+                    <div class="order-product-item--price">
+                      <span>480,000₫</span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="order-summary-section order-summary-section-discount"
+                >
+                  <div class="form-discount-add">
+                    <div class="fieldset clearfix">
+                      <div class="field">
+                        <div class="field-input-btn-wrapper">
+                          <input
+                            type="text"
+                            class="field-input"
+                            placeholder="Nhập mã tại đây"
+                          />
+                          <button class="field-input-btn">Sử dụng</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="order-summary-section order-summary-section-total-lines"
+                >
+                  <div class="total-line total-line-subtotal">
+                    <div class="total-line-name">Tạm tính</div>
+                    <div class="total-line-price">
+                      <span class="order-summary-emphasis">
+                        1,480,000 đ
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="total-line total-line-shipping">
+                    <div class="total-line-name">Phí vận chuyển</div>
+                    <div class="total-line-price">
+                      <span class="order-summary-emphasis" id="ship_fee"
+                        >0 đ</span
+                      >
+                    </div>
+                  </div>
+                  <span class="line" style="opacity: .3;"></span>
+                  <div class="total-line-table-footer">
+                    <div class="total-line">
+                      <div class="total-line-name payment-due-label">
+                        <span class="payment-due-label-total">Tổng cộng</span>
+                      </div>
+                      <div class="total-line-name payment-due">
+                        <span
+                          class="payment-due-price"
+                          id="showTotalMoney"
+                          value="1480000"
+                        >
+                          1,480,000đ
+                        </span>
+                        <input type="hidden" id="getMn" value="1480000" />
+                      </div>
+                    </div>
+                    <span class="line" style="opacity: .3;"></span>
+                    <div class="total-line total-line-gift">
+                      <div colspan="2">
+                        <div class="descriptionCustomer">
+                          Chúng tôi sẽ XÁC NHẬN đơn hàng bằng EMAIL hoặc ĐIỆN
+                          THOẠI. Bạn vui lòng kiểm tra EMAIL hoặc NGHE MÁY ngay
+                          khi đặt hàng thành công và CHỜ NHẬN HÀNG
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="main" style="width: 52%;">
+            <div class="main-header">
+              <a href="#" class="logo">
+                <img
+                  src="https://cdn.nhanh.vn/cdn/store1/41786/store_1574152996_548.jpg"
+                  alt=""
+                />
+              </a>
+              <ul class="breadcrumb">
+                <li class="breacrumb-item">
+                  <a href="#" style="color: #338dbc;">Giỏ hàng</a>
+                </li>
+                <li
+                  class="breacrumb-item"
+                  style="font-size: 12px;
+                color: #999; font-weight: 400;"
+                >
+                  Thông tin giao hàng
+                </li>
+              </ul>
+            </div>
+            <div class="main-content">
+              <div class="step">
+                <div class="step-sections">
+                  <div class="section">
+                    <div class="section-header">
+                      <h2 class="section-title">Thông tin giao hàng</h2>
+                    </div>
+                    <div class="section-content section-customer-information">
+                      <p class="section-content-text">
+                        Bạn đã có tài khoản ? <a href="#">Đăng nhập</a>
+                      </p>
+                      <div class="fieldset clearfix">
+                        <div class="field">
+                          <div class="field-input-wrapper">
+                            <input
+                              type="text"
+                              class="field-input"
+                              placeholder="Họ và tên"
+                            />
+                          </div>
+                        </div>
+                        <div class="field field-two">
+                          <div class="field-input-wrapper">
+                            <input
+                              type="text"
+                              class="field-input"
+                              placeholder="Email"
+                            />
+                          </div>
+                        </div>
+                        <div class="field field-third">
+                          <div class="field-input-wrapper">
+                            <input
+                              type="text"
+                              class="field-input"
+                              placeholder="Số điện thoại"
+                            />
+                          </div>
+                        </div>
+                        <div class="field">
+                          <div class="field-input-wrapper">
+                            <input
+                              type="text"
+                              class="field-input"
+                              placeholder="Địa chỉ"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="section-content"></div>
+                    <div class="section-shipping"></div>
+                  </div>
+                </div>
+                <div class="step-footer">
+                  <a class="step-footer-previous-link tp_title" href="/cart">
+                    <svg
+                      class="previous-link-icon icon-chevron icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="6.7"
+                      height="11.3"
+                      viewBox="0 0 6.7 11.3"
+                    >
+                      <path
+                        d="M6.7 1.1l-1-1.1-4.6 4.6-1.1 1.1 1.1 1 4.6 4.6 1-1-4.6-4.6z"
+                      ></path>
+                    </svg>
+                    Giỏ hàng
+                  </a>
+                  <button
+                    type="submit"
+                    class="step-footer-continue-btn btn-black"
+                  >
+                    <span class="btn-content">Hoàn tất đơn hàng</span>
+                    <i class="btn-spinner icon icon-button-spinner"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
