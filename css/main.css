@@ -1665,7 +1665,7 @@ a.step-footer-previous-link.tp_title {
   .seller-main-content {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: none;
-    gap: 30px;
+    gap: 0;
   }
 
   .collection-banner {
