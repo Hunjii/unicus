@@ -33,7 +33,7 @@
   <body>
     <div class="wrapper">
       <div class="container">
-        <form action="post">
+        <form>
           <div class="side-bar">
             <div class="side-bar-content">
               <div class="order-summary-sections">
@@ -221,7 +221,10 @@
                   </div>
                 </div>
                 <div class="step-footer">
-                  <a class="step-footer-previous-link tp_title" href="/cart">
+                  <a
+                    class="step-footer-previous-link tp_title"
+                    href="javascript:void(0)"
+                  >
                     <svg
                       class="previous-link-icon icon-chevron icon"
                       xmlns="http://www.w3.org/2000/svg"
@@ -235,10 +238,7 @@
                     </svg>
                     Giỏ hàng
                   </a>
-                  <button
-                    type="submit"
-                    class="step-footer-continue-btn btn-black"
-                  >
+                  <button class="step-footer-continue-btn btn-black">
                     <span class="btn-content">Hoàn tất đơn hàng</span>
                     <i class="btn-spinner icon icon-button-spinner"></i>
                   </button>
@@ -249,5 +249,7 @@
         </form>
       </div>
     </div>
+
+    <script src="/js/main.js"></script>
   </body>
 </html>

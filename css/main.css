@@ -1814,12 +1814,10 @@ a.step-footer-previous-link.tp_title {
   .product-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -30px;
   }
 
   .product-item {
     margin-right: 0;
-    width: 50%;
     padding: 0 10px;
   }
 
